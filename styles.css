@@ -5,6 +5,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+img {
+    max-width: 100%;
+}
 #page-container {
     display: grid;
     grid-template-rows: 1 5fr 1fr;
@@ -16,6 +20,7 @@ header {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / 4;
+    min-height: 50px;
 }
 
 #header-logo-a {
@@ -24,7 +29,8 @@ header {
     justify-self: center;
 }
 #header-logo {
-    width: 13vw;
+    min-height: 20px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -33,14 +39,14 @@ header {
     justify-self: center;
     align-self: center;
     font-family: Anton;
-    font-size: 2vw;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
 }
 
 .header-link:hover {
     color: red;
-    font-size: 1.9vw;
+    font-size: 0.9rem;
 }
 
 main {
@@ -51,30 +57,22 @@ main {
 }
 
 .main-home {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 #main-img-belal {
-    grid-row: 2 / 3;    
-    height: 60vh;
     justify-self: center;
     align-self: center;
-    margin-left: 2vw;
 }
 
 #main-img-champs {
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
     justify-self: center;
-    height: 60vh;
-    margin-top: 3vh;
 }
 
 #main-img-ap {
-    height: 60vh;
+    max-width: 100%;
     justify-self: center;
     align-self: center;
 }
@@ -86,46 +84,41 @@ main {
 }
 .ranking-table-container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2vw;
-    margin-top: 5vh;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 50px;
 }
 
 caption {
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
     font-family: Anton;
     color: rgb(235, 52, 52);
+    font-size: 1rem;
 }
 
-#pfp-table {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-}
 
-#feather-table {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-}
 
 .table-img {
-    width: 15vw;
+    min-height: 20px;
+    
 }
 
 th {
-    width: 3vw;
-    height: 5vh;
+    width: 1rem;
+    height: 2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 td {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
 }
 
 table h3 {
     font-family: Anton;
-    font-size: 2vw;
+    font-size: 1.5rem;
     margin: 0;
 }
 
@@ -138,12 +131,18 @@ span {
     font-family: Anton;
     letter-spacing: 1px;
     color: rgb(235, 52, 52);
-    font-size: 1.1vw;
+    font-size: 0.7rem;
 }
 
 .log-in-main {
-    width: 100vw;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-main {
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,8 +155,8 @@ span {
     flex-direction: column;
     border: 1px solid rgb(241, 238, 238);
     border-radius: 10px;
-    width: 55vw;
-    height: 50vh;
+    width: 30rem;
+    height: 20rem;
 }
 
 .new-account-form {
@@ -167,34 +166,34 @@ span {
     flex-direction: column;
     border: 1px solid rgb(241, 238, 238);
     border-radius: 10px;
-    width: 60vw;
-    height: 50vh;
+    width: 30rem;
+    height: 30rem;
 }
 
 .form-element {
     display: flex;
     flex-direction: column;
-    margin: 1vw;
+    margin: 0.5rem;
 }
 
 label {
     font-family: Anton;
     color: black;
-    font-size: 1.3vw;
+    font-size: 0.8rem;
 }
 
 input {
-    width: 20vw;
-    height: 4vh;
-    border: 0.2vw solid red;
+    width: 15rem;
+    height: 2rem;
+    border: 0.1rem solid red;
 }
 
 #input-btn {
-    margin-top: 2vh;
-    width: 10vw;
-    height: 6vh;
+    margin-top: 1rem;
+    width: 6rem;
+    height: 2rem;
     background-color: rgb(235, 52, 52);
-    border: 0.3vw solid white;
+    border: 0.1rem solid white;
     border-radius: 5px;
     color: black;
     font-family: Anton;
@@ -202,11 +201,11 @@ input {
 
 #input-btn:hover {
     cursor: pointer;
-    width: 9.5vw;
+    width: 5.7rem;
 }
 
 #account {
-    font-size: 1.4vw;
+    font-size: 0.8rem;
     text-decoration: none;
     
 }
