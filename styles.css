@@ -20,7 +20,7 @@ header {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / 4;
-    min-height: 50px;
+    min-height: 10vh;
 }
 
 #header-logo-a {
@@ -97,7 +97,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(10rem, 20vw, 20rem), 1fr));
     gap: 2rem;
-    margin-top: 50px;
+    margin-top: 2vh;
 }
 
 
