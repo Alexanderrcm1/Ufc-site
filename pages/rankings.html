@@ -8,23 +8,28 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div id="page-container">
+    <div class="page-container">
         <header>
             <a href="../index.html" id="header-logo-a">
                 <img src="../imgs/ufc_logo2.png" id="header-logo">
             </a>
+            <div class="header-right">
+                <a id="rankings" class="header-link" href="./rankings.html">RANKINGS</a>
+                <a id="athletes" class="header-link" href="./athletes.html">ATHLETES</a>
+            </div>
             <a id="log-in" class="header-link" href="./login.html">LOG IN</a>
-            <a id="Rankings" class="header-link" href="./rankings.html">RANKINGS</a>
         </header>
         <main>
             <div class="ranking-table-container">
                 <table id="pfp-table">
-                    <caption>MEN'S POUND-FOR-POUND (TOP RANK)</caption>
+                    <caption>MEN'S POUND-FOR-POUND</caption>
                     <tr>
                         <th>1</th>
                         <td>
-                            <h3>ISLAM </br> MAKHACHEV</h3>
-                            <img src="../imgs/maka.png" class="table-img">
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=lb%20%5B70.45%20kg%5D-,ISLAM%0AMAKHACHEV,-27%2D1%2D0">
+                                <h3>ISLAM </br> MAKHACHEV</h3>
+                                <img src="../imgs/maka.png" class="table-img">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -44,13 +49,72 @@
                         <td>Merab Dvalishvili</td>
                     </tr>
                 </table>
+                <table id="fly-table">
+                    <caption>FLYWEIGHT</caption>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22THE%20CANNIBAL%22-,ALEXANDRE%0APANTOJA,-29%2D5%2D0">
+                                <h3>ALEXANDRE</br>PANTOJA</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/pant.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Brandon Royval</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Brandon Moreno</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Amir Albazi</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Kai Kara-France</td>
+                    </tr>
+
+                </table>
+                <table id="bantam-table">
+                    <caption>BANTAMWEIGHT</caption>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22THE%20MACHINE%22-,MERAB%0ADVALISHVILI,-19%2D4%2D0">
+                                <h3>MERAB</br>DVALISHVILI</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/merab.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Sean O'Malley</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Petr Yan</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Umar Nurmagomedov</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Cory Sandhagen</td>
+                    </tr>
+                </table>
                 <table id="feather-table">
                     <caption>FEATHERWEIGHT</caption>
                     <tr>
                         <th></th>
                         <td>
-                            <h3>ILIA</br>TOPURIA</br><span>CHAMPION</span></h3>
-                            <img src="../imgs/ilia.png" class="table-img">
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22EL%20MATADOR%22-,ILIA%0ATOPURIA,-16%2D0%2D0">
+                                <h3>ILIA</br>TOPURIA</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/ilia.png" class="table-img">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -75,8 +139,10 @@
                     <tr>
                         <th></th>
                         <td>
-                            <h3>ISLAM</br>MAKHACHEV</br><span>CHAMPION</span></h3>
-                            <img src="../imgs/maka.png" class="table-img">
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=lb%20%5B70.45%20kg%5D-,ISLAM%0AMAKHACHEV,-27%2D1%2D0">
+                                <h3>ISLAM </br> MAKHACHEV</h3>
+                                <img src="../imgs/maka.png" class="table-img">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -96,13 +162,43 @@
                         <td>Dustin Poirier</td>
                     </tr>
                 </table>
+                <table id="welter-table">
+                    <caption>WELTERWEIGHT</caption>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=REMEMBER%20THE%20NAME%22-,BELAL%0AMUHAMMAD,-24%2D3%2D0">
+                                <h3>BELAL</br>MUHAMMAD</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/bel.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Leon Edwards</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Shavkat Rakhmanov</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Kamaru Usman</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Jack Della Maddalena</td>
+                    </tr>
+                </table>
                 <table id="mid-table">
                     <caption>MIDDLEWEIGHT</caption>
                     <tr>
                         <th></th>
                         <td>
-                            <h3>DRICUS DU</br>PLESSIS</br><span>CHAMPION</span></h3>
-                            <img src="../imgs/ddp.png" class="table-img">
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22STILLKNOCKS%22-,DRICUS%0ADU%20PLESSIS,-22%2D2%2D0">
+                                <h3>DRICUS DU</br>PLESSIS</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/ddp.png" class="table-img">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -127,8 +223,10 @@
                     <tr>
                         <th></th>
                         <td>
-                            <h3>ALEX</br>PEREIRA</br><span>CHAMPION</span></h3>
-                            <img src="../imgs/ap.png" class="table-img">
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22POATAN%22-,ALEX%0APEREIRA,-12%2D2%2D0">
+                                <h3>ALEX</br>PEREIRA</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/ap.png" class="table-img">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -153,8 +251,10 @@
                     <tr>
                         <th></th>
                         <td>
-                            <h3>JON</br>JONES</br><span>CHAMPION</span></h3>
-                            <img src="../imgs/jj.png" class="table-img">
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22BONES%22-,JON%0AJONES,-28%2D1%2D0">
+                                <h3>JON</br>JONES</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/jj.png" class="table-img">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -172,6 +272,118 @@
                     <tr>
                         <th>4</th>
                         <td>Sergei Pavlovich</td>
+                    </tr>
+                </table>
+                <table id="wmn-pfp-table">
+                    <caption>WOMEN'S POUND-FOR-POUND</caption>
+                    <tr>
+                        <th>1</th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=VALENTINA%0ASHEVCHENKO">
+                                <h3>VALENTINA </br> SHEVCHENKO</h3>
+                                <img src="../imgs/shev.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Zhang Weili</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Alexa Grasso</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Julianna Peña</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Manon Fiorot</td>
+                    </tr>
+                </table>
+                <table id="wmn-straw-table">
+                    <caption>WOMEN'S STRAWWEIGHT</caption>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=%22MAGNUM%22-,ZHANG%0AWEILI,-25%2D3%2D0">
+                                <h3>ZHANG</br>WEILI</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/wei.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Tatiana Suarez</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Yan Xiaonan</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Virna Jandiroba</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Jéssica Andrade</td>
+                    </tr>
+                </table>
+                <table id="wmn-fly-table">
+                    <caption>WOMEN'S FLYWEIGHT</caption>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=VALENTINA%0ASHEVCHENKO">
+                                <h3>VALENTINA</br>SHEVCHENKO</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/shev.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Alexa Grasso</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Manon Fiorot</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Erin Blanchfield</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Maycee Barber</td>
+                    </tr>
+                </table>
+                <table id="wmn-bantam-table">
+                    <caption>WOMEN'S BANTAMWEIGHT</caption>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="http://127.0.0.1:5500/pages/athletes.html#:~:text=THE%20VENEZUELAN%20VIXEN%22-,JULIANNA%0APE%C3%91A,-13%2D5%2D0">
+                                <h3>JULIANNA</br>PEÑA</br><span>CHAMPION</span></h3>
+                                <img src="../imgs/pen.png" class="table-img">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Raquel Pennington</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Kayla Harrison</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Ketlen Vieira</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Norma Dumont</td>
                     </tr>
                 </table>
             </div>
